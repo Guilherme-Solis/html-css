@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: "Love";
+            src: url("fonts/Dreamhearts_DEMO.ttf"), format('truetype'), url("fonts/Dreamhearts_DEMO.otf"), format("opentype")
+
+            /*
+                Tipos de format ()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+        @font-face {
+            font-family: "Love2";
+            src: url("fonts/love\ story\ ttf.ttf"), format("truetype")
+        }
+
+        h1 {
+            font-family: Love2;
+            font-weight: normal;
+        }
+        h2 {
+            font-family: Love;
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut fuga, modi exercitationem hic nulla ratione consequuntur atque, vero in saepe nihil, fugiat eveniet cupiditate nobis debitis tenetur? Illo, voluptate neque.</p>
+
+    <h2>Título 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, iusto. Animi quas optio placeat explicabo, ex odio praesentium sed ea maxime nulla voluptate voluptatum soluta aspernatur provident quisquam rem modi.</p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos en HTML5</title>
+</head>
+<body>
+    <h1>Colando vídeos no meu site</h1>
+    <p>Este video está hospedado no meu próprio servidos </p>
+    <!-- 1 Forma de hospedar o video-->
+    <video src="videos/Meu-Video.mp4" controls width="350"></video>
+
+    <!-- Segunda forma e mais recomendável-->
+
+    <video controls width="560" height="315" poster="imagens/cavalo-pastando.png">
+        <source src="videos/Meu-Video.mkv" type="video/mp4">
+        <source src="videos/Meu-Video.mp4" type="video/mp4">
+        <source src="videos/Meu-Video.webm" type="video/webm">
+        <source src="videos/Meu-Video.ogv" type="video/ogg">
+        <p>Seu navegador não possui compatibilidade com videos.</p>
+    </video>
+
+
+    <h2>Incorporando vídeos externos com o Youtube</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=kOIN-5XCF5DADEGn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h2>Incorporando vídeos externos com o Vimeo</h2>
+
+    <iframe src="https://player.vimeo.com/video/333837958?h=35fe0078cb&color=ff9933&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>
