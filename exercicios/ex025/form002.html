@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 002</title>
+</head>
+<body>
+    <h1>Criando um formulário</h1>
+    <!-- Usando o autocomplete 
+        nos inputs:
+        autocomplete para o navegador sugerir senhas, users etc salvos
+    -->
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p><label for="isuario">Usuário:</label>
+            <input type="text" name="Usuário" id="isuario" required minlength="5" maxlength="15" placeholder="Usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="Senha" id="isenha" required minlength="8" placeholder="Senha">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
