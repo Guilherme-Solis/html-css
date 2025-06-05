@@ -3,3 +3,17 @@
 
 /* Estilo para a impressora */
 
+* {
+    margin: 5px;
+    padding: 10px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+menu {
+    display: none;
+}
