@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Meu site</h1>
+
+        <span id="menu-mobile" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="menu_itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando meu Site</h2>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum sed animi neque excepturi, rem sequi voluptas perferendis vel cupiditate quas officia ad sunt libero culpa quae voluptate delectus ratione odio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci deleniti enim fugit ipsum! Illo obcaecati delectus dolores vitae, temporibus, quae, eligendi labore veniam placeat itaque similique. Delectus facilis possimus praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, incidunt cumque deleniti odit soluta aliquam. Sit saepe possimus odit, eveniet voluptatum alias magni atque voluptates, ex, tempore natus provident nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit laborum cupiditate error ullam blanditiis quaerat asperiores ad at officia sequi maiores voluptate vero tempore, velit facilis alias quo ipsum?
+            </p>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod dicta distinctio amet ratione impedit, cupiditate quo sed voluptate similique qui asperiores quia temporibus odio ut repellendus animi maxime, obcaecati modi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis voluptatibus veniam perferendis nostrum beatae totam eum distinctio laborum officia corrupti perspiciatis rerum pariatur est, inventore esse! Beatae consectetur quis voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, optio magnam culpa ea officiis eius tempore et laborum inventore. Sed eius illo ducimus sint obcaecati iure inventore repudiandae et eos?
+            </p>
+        </article>
+    </main>
+    <script>
+
+        function clickMenu() {
+            if (menu_itens.style.display == "block") {
+                menu_itens.style.display = "none"
+            } else {
+                menu_itens.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>
