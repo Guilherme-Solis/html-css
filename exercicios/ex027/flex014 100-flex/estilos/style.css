@@ -8,50 +8,55 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    width: 100vw;
-    height: 100vh;
+    
 }
 
-header {
+
+p, h1, h2 {
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
+    text-align: justify;
 }
-header > h1 {
+
+section.text-content {
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+
+#media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
-
-main {
-    background-color: rgb(204, 204, 204);
+article > div.text {
+    flex: 1 1 500px;
 }
 
-main > h2 {
-    padding: 10px;
+article > div.media {
+    flex: 1 0 500px;
+
+}
+div.media > img{
+    display: block;
+    margin: auto;
 }
 
-p {
-    padding: 10px;
-    text-indent: 15px;
+div.media > iframe {
+    display: block;
+    margin: auto;
+    padding: 0 20px;
+    width: 90%;
 }
-
-section#sec1 {
+#text-media {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+
 }
 
-div#img {
-    background-image: url('https://i0.wp.com/atividadeparaeducacaoespecial.com/wp-content/uploads/2014/08/QUEBRA-CABE%C3%87A-BRANCO-COM-UM-COMPUTADOR-DESKTOP-NOTEBOOK-IPAD-E-CELULAR-NOS-QUATRO-CANTOS-E-UM-BONECO-AZUL-NO-MEIO.jpg?ssl=1');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    width: 400px;
-}
 
-footer {
-    padding: 10px;
-    margin-bottom: 10px;
-}
-footer > h2 {
-    margin-bottom: 20px;
-}
