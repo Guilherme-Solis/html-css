@@ -22,15 +22,50 @@ header {
 }
 header > h1 {
     color: white;
-    font-size: 1em;
+    font-size: 2em;
     text-align: center;
     margin-bottom: 30px;
 
 }
 header > nav {
     list-style-type: none;
-    justify-content: center;    
+    display: flex;
+    flex-flow: column nowrap;    
+}
+header > nav > a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(65, 65, 65);
+    padding: 10px;
+    margin: 5px;
+    flex: 1 1;
+    text-align: center;
+    border-radius: 5px;
+
 }
 
+header > nav > a:hover {
+    background-color: rgb(180, 180, 180);
 
+    transition: background-color 0.5s;
+}
 
+main {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.39);
+}
+
+main > h2 {
+    padding: 10px;
+    text-align: center;
+}
+
+main > p {
+    text-indent: 20px;
+    padding: 10px;
+    line-height: 1.3;
+}
