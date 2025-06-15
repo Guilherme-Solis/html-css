@@ -11,28 +11,38 @@
             height: 300px;
             display: grid;
 
-            grid-template: repeat(3, auto) / repeat(3, auto);
-            gap: 10px;
+            grid-template: repeat(3, auto) / repeat(4, 1fr);
 
-            place-items: start end;
-
-            place-content: end start;
+            gap: 5px;
         }
         div.item {
             border: 2px solid red;
             padding: 10px;
         }
-    </style>
+
+        .caixa1 {
+        
+            grid-area: 1 / 1 / 2 / 5;
+        }
+
+        .caixa2 {
+            
+            grid-area: 2 / 1 / 4 / 3;
+        }
+
+        .caixa3 {
+
+            grid-area: 2 / 3 / 4 / 5;
+        }
+        
+
+</style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="caixa1 item">Caixa A</div>
+        <div class="caixa2 item">Caixa B</div>
+        <div class="caixa3 item">Caixa C</div>
     </div>
     
 </body>

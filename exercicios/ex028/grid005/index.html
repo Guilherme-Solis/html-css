@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exprerimentando o Grid</title>
+
+    <style>
+        div.conteiner {
+            border: 2px solid blue;
+            height: 300px;
+            display: grid;
+
+            grid-template: repeat(3, auto) / repeat(4, 1fr);
+
+            gap: 5px;
+        }
+        div.item {
+            border: 2px solid red;
+            padding: 10px;
+        }
+
+        .caixa1 {
+            grid-row: 1 / 2;
+            grid-column: 1 / 5;
+        }
+
+        .caixa2 {
+            grid-row: 2 / span 2;
+            grid-column: 1 / span 2;
+        }
+
+        .caixa3 {
+            grid-row: 2 / span 2;
+            grid-column: 3 / span 2;
+        }
+        
+
+</style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="caixa1 item">Caixa A</div>
+        <div class="caixa2 item">Caixa B</div>
+        <div class="caixa3 item">Caixa C</div>
+    </div>
+    
+</body>
+</html>

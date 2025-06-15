@@ -8,15 +8,25 @@
     <style>
         div.conteiner {
             border: 2px solid blue;
-            height: 300px;
+
             display: grid;
 
-            grid-template: repeat(3, auto) / repeat(3, auto);
-            gap: 10px;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: 2fr repeat(2, 1fr) 2fr;
+            gap: 5px;
 
-            place-items: start end;
+            grid-auto-flow: row; /*ou column*/
+            grid-auto-rows: 80px;
+            grid-auto-columns: 100px;
 
-            place-content: end start;
+            /* Existe tambem como colocar as frações
+            1fr 2fr 1fr
+            grid-template: 1fr 2fr 1fr / 1fr 1fr 1fr;
+
+            */
+            place-items: normal normal;
+
+            place-content: normal normal;
         }
         div.item {
             border: 2px solid red;
@@ -33,6 +43,9 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>        
     </div>
     
 </body>
